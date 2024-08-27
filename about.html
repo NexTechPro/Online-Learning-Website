@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Section 1: Navbar -->
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm w-100 fixed-top">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="logo.png" alt="TechCrafters Logo" width="100" height="auto">
+                    </a>
+                    <!-- Navbar Toggle for Mobile View -->
+                    <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Navbar Links and Buttons -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="courses.html">Courses</a>
+                            <a class="nav-link" href="courseDetails.html">Course Details</a>
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                            <button class="btn btn-signup mx-2" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                            <button class="btn btn-signin" data-bs-toggle="modal" data-bs-target="#signinModal">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section 2: Main Content Area -->
+        <aside id="sidebar_about" class="position-fixed end-0 top-0">
+            <a href="#introduction">Introduction</a>
+            <a href="#vision">Our Vision</a>
+            <a href="#mission">Future Mission</a>
+            <a href="#methodology">Learning Methodology</a>
+        </aside>
+
+        <main id="main_about">
+            <section id="introduction">
+                <h2 >Introduction</h2>
+                <p>Welcome to the TechCrafters Dashboard! This platform is your one-stop destination for managing your learning journey with us. Whether you're a beginner starting from scratch or an experienced professional looking to upskill, we have tailored courses and resources to suit your needs. Through our platform, you can track your progress, access course materials, and receive personalized recommendations to enhance your learning experience. Our goal is to make your educational journey as smooth and productive as possible, ensuring you acquire the skills necessary to succeed in today's fast-paced tech industry.</p>
+            </section>
+
+            <section id="vision">
+                <h2>Our Vision</h2>
+                <p>At TechCrafters, our vision is to be at the forefront of digital education, providing a dynamic and inclusive learning environment for all. We believe in the transformative power of technology and aim to equip our learners with the tools and knowledge they need to make a positive impact in the world. By fostering a culture of continuous learning, innovation, and collaboration, we strive to create a community of tech-savvy individuals who are ready to tackle the challenges of the future. Our vision is not just about teaching skills but about nurturing a mindset that embraces change, creativity, and lifelong learning.</p>
+            </section>
+
+            <section id="mission">
+                <h2>Future Mission</h2>
+                <p>As we look to the future, our mission is to continuously innovate and expand our offerings to meet the evolving needs of our learners. We are committed to integrating the latest technologies and teaching methodologies into our curriculum, ensuring that our learners are always ahead of the curve. Our mission includes not only providing top-notch education but also fostering a supportive and inclusive learning community where everyone feels empowered to achieve their goals. By staying true to our values of excellence, integrity, and inclusivity, we aim to build a brighter future for all our learners, helping them to unlock their full potential and achieve their dreams.</p>
+            </section>
+
+            <section >
+                <h2 id="methodology">Learning Methodology</h2>
+                <p>At TechCrafters, we believe in a hands-on, practical approach to learning. Our methodology is designed to ensure that you not only understand the theoretical concepts but also know how to apply them in real-world scenarios. We focus on providing a comprehensive learning experience that combines various elements to enhance your skills and knowledge.</p>
+                <ul>
+                    <li><strong>Hands-on Exercises:</strong> We offer practical exercises that allow you to apply what you've learned in a controlled environment, helping to reinforce your understanding and build your confidence.</li>
+                    <li><strong>Quizzes:</strong> Our quizzes are designed to test your knowledge and ensure that you have a solid grasp of the concepts before moving on to more advanced topics.</li>
+                    <li><strong>Project-Based Learning:</strong> We encourage you to work on projects that simulate real-world challenges, giving you a taste of what it's like to work in the tech industry.</li>
+                    <li><strong>Peer Collaboration:</strong> Learning is more effective when done in a community. Our platform allows you to collaborate with your peers, share insights, and learn from each other's experiences.</li>
+                    <li><strong>Expert Feedback:</strong> Our instructors provide detailed feedback on your work, helping you to improve and refine your skills continuously.</li>
+                </ul>
+                <p>By combining these elements, we aim to provide a well-rounded education that prepares you for success in the tech industry. Our goal is to ensure that you leave TechCrafters with the skills, knowledge, and confidence to excel in your career.</p>
+            </section>
+        </main>
+
+    <!-- Bootstrap 5 script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

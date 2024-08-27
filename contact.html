@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <!-- Bootstrap 5 link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Section 1:Navbar -->
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-xl w-100 fixed-top">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="TechCrafters Logo" width="100" height="auto">
+          </a>
+          <!-- Navbar Toggle for Mobile View -->
+          <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar Links and Buttons -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+              <a class="nav-link" href="about.html">About Us</a>
+              <a class="nav-link" href="courses.html">Courses</a>
+              <a class="nav-link" href="courseDetails.html">Course Details</a>
+              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+              <button class="btn btn-signup mx-2" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+              <button class="btn btn-signin" data-bs-toggle="modal" data-bs-target="#signinModal">Sign In</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  <!-- Section 2: Contact Information -->
+  <div class="container text-white my-5 pt-5">
+    <h2 class="text-center mb-4">Contact Information</h2>
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start">
+        <p><strong>Address:</strong> Tech Crafters, AliPark, Lahore, Pakistan</p>
+        <p><strong>Email:</strong> info@techCrafters.com</p>
+        <p><strong>Phone:</strong> +123-456-7890</p>
+        <!-- Social Media Links -->
+        <div class="social-media-icons">
+          <a href="https://www.facebook.com/yourpage" class="btn btn-outline-light mx-1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/yourprofile" class="btn btn-outline-light mx-1" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com/NexTechPro" class="btn btn-outline-light mx-1" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="www.linkedin.com/in/nida-azam-427861317" class="btn btn-outline-light mx-1" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6803.768033408887!2d74.4057494400899!3d31.499871694775226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f5ea4e41f3f%3A0xb45a28c2d8dd77da!2sAli%20Park%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1723908738068!5m2!1sen!2s"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- Section 3: Contact Form -->
+  <div class="container-fluid text-white" id="box2">
+    <div class="row">
+      <h2 class="mb-4">Send Us a Message</h2>
+      <div class="col-md-12">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Enter your subject">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn_contact">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+  
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

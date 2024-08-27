@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseDetails Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Section 1: Navbar -->
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-xl w-100 fixed-top">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="logo.png" alt="TechCrafters Logo" width="100" height="auto">
+                    </a>
+                    <!-- Navbar Toggle for Mobile View -->
+                    <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Navbar Links and Buttons -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                            <a class="nav-link" href="about.html">About Us</a>
+                            <a class="nav-link" href="courses.html">Courses</a>
+                            <a class="nav-link" href="#">Course Details</a>
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                            <button class="btn btn-signup mx-2" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                            <button class="btn btn-signin" data-bs-toggle="modal" data-bs-target="#signinModal">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Section 2:Course Details Cards -->
+            <section class="container mt-3" id="Courses_details">
+                <div class="row">
+                    <!---------------------------------- Card 1:Mern Stack Development ---------------------------->
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-4">
+                        <div class="card">
+                            <img src="mern_card.jpeg" class="card-img-top" alt="MERN Stack Development">
+                            <div class="card-body">
+                                <h5 class="card-title">MERN Stack Development</h5>
+                                <p class="card-text">Master MongoDB, Express.js, React, and Node.js to build powerful
+                                    full-stack applications.</p>
+                                <p><strong>Instructor:</strong> Jane Doe</p>
+                                <p><strong>Total Time:</strong> 30 hours</p>
+                                <a href="#" class="card_link" onclick="viewSyllabus('mern')">View Syllabus</a>
+                                <p><strong>Reviews:</strong> <mark class="rating">★★★★☆</mark> (45 Reviews)</p>
+                                <a href="#" class="btn btn-secondary"
+                                    onclick="InstructorInfo('mern-instructor-details')">Instructor
+                                    Details</a>
+                                <a href="#" id="Mern" class="btn btn-primary btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Instructor Details Section (Initially Hidden) -->
+                        <div class="instructor-details d-none" id="mern-instructor-details">
+                            <h3>Instructor: Jane Doe</h3>
+                            <p>Jane Doe is a full-stack developer with 10 years of experience in building scalable web
+                                applications using the MERN stack. She has taught over 5,000 students and is known for
+                                her engaging and hands-on teaching approach.</p>
+                            <p><strong>Experience:</strong> 10 years</p>
+                            <p><strong>Email:</strong> jane.doe@example.com</p>
+                        </div>
+                        <!-- Syllabus of MERN Stack Development -->
+                        <div class="syllabus d-none" id="mern">
+                            <h1>MERN Stack Development Course Syllabus</h1>
+
+                            <div class="module">
+                                <h2>Module 1: Introduction to MERN Stack</h2>
+                                <ul>
+                                    <li>Overview of MERN Stack Components</li>
+                                    <li>Setting Up Development Environment</li>
+                                    <li>Basic Concepts of MongoDB, Express.js, React, Node.js</li>
+                                    <li>Building a Simple MERN Application</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 2: MongoDB and Express.js</h2>
+                                <ul>
+                                    <li>Advanced MongoDB Queries and Aggregation</li>
+                                    <li>Building RESTful APIs with Express.js</li>
+                                    <li>Connecting MongoDB with Express.js</li>
+                                    <li>Data Validation and Error Handling</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 3: React and Front-End Integration</h2>
+                                <ul>
+                                    <li>React Basics and State Management</li>
+                                    <li>Component Lifecycle and Hooks</li>
+                                    <li>Connecting React with Backend APIs</li>
+                                    <li>Routing and Navigation with React Router</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 4: Advanced Topics and Deployment</h2>
+                                <ul>
+                                    <li>Server-Side Rendering with React</li>
+                                    <li>Authentication and Authorization in MERN</li>
+                                    <li>Deployment Strategies (Heroku, AWS)</li>
+                                    <li>Performance Optimization and Scaling</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 5: Capstone Project</h2>
+                                <ul>
+                                    <li>Building a Full-Stack MERN Application</li>
+                                    <li>Integration of Front-End and Back-End</li>
+                                    <li>Project Presentation and Review</li>
+                                    <li>Feedback and Iteration</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!---------------------------------------- Card 2: UI/UX ------------------------------------>
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-4">
+                        <div class="card">
+                            <img src="UI_UX_img.avif" class="card-img-top" alt="UI/UX Design">
+                            <div class="card-body">
+                                <h5 class="card-title">UI/UX Design for Front-End Interns</h5>
+                                <p class="card-text">Practical skills in UI/UX design tailored for front-end development
+                                    internships.</p>
+                                <p><strong>Instructor:</strong> John Smith</p>
+                                <p><strong>Total Time:</strong> 20 hours</p>
+                                <a href="#" class="card_link" onclick="viewSyllabus('ui_ux')">View Syllabus</a>
+                                <p><strong>Reviews:</strong> <mark class="rating">★★★★☆</mark> (30 Reviews)</p>
+                                <a href="#" class="btn btn-secondary"
+                                    onclick="InstructorInfo('ui_ux-instructor-details')">Instructor Details</a>
+                                <a href="#"  class="btn btn-primary btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Instructor Details Section (Initially Hidden) -->
+                        <div class="instructor-details d-none" id="ui_ux-instructor-details">
+                            <h3>Instructor: John Smith</h3>
+                            <p>John Smith is a seasoned UI/UX designer with over 8 years of experience in designing
+                                user-centric interfaces for web and mobile applications. He has worked with top tech
+                                companies and is passionate about teaching the principles of design and user experience
+                                to aspiring front-end developers.</p>
+                            <p><strong>Experience:</strong> 8 years</p>
+                            <p><strong>Email:</strong> john.smith@example.com</p>
+                        </div>
+                        <!-- Syllabus of UI/UX -->
+                        <div class=" syllabus d-none" id="ui_ux">
+                            <h1>UI/UX Design Course Syllabus</h1>
+
+                            <div class="module">
+                                <h2>Module 1: Introduction to UI/UX</h2>
+                                <ul>
+                                    <li>Understanding User Interface and User Experience</li>
+                                    <li>Principles of Good Design</li>
+                                    <li>Design Thinking Process</li>
+                                    <li>User Research and Personas</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 2: Wireframing and Prototyping</h2>
+                                <ul>
+                                    <li>Creating Wireframes</li>
+                                    <li>Low-Fidelity vs High-Fidelity Prototypes</li>
+                                    <li>Using Tools like Figma and Adobe XD</li>
+                                    <li>User Testing and Feedback</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 3: Visual Design Principles</h2>
+                                <ul>
+                                    <li>Color Theory and Typography</li>
+                                    <li>Designing with Grids</li>
+                                    <li>Visual Hierarchy and Layouts</li>
+                                    <li>Branding and Consistency</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 4: UI/UX Design Tools</h2>
+                                <ul>
+                                    <li>Introduction to Design Tools (Figma, Sketch, Adobe XD)</li>
+                                    <li>Interactive Prototyping</li>
+                                    <li>Design Handoff to Developers</li>
+                                    <li>Responsive Design and Media Queries</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 5: Capstone Project</h2>
+                                <ul>
+                                    <li>Designing a Complete UI/UX for a Real-World Application</li>
+                                    <li>Conducting User Testing and Iteration</li>
+                                    <li>Final Presentation of Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------- Card 3:Responsive Web Design ---------------------------->
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-4">
+                        <div class="card">
+                            <img src="responsive_card.avif" class="card-img-top" alt="Responsive Web Design">
+                            <div class="card-body">
+                                <h5 class="card-title">Responsive Web Design</h5>
+                                <p class="card-text">Learn techniques to create web designs that work on any device or
+                                    screen size.</p>
+                                <p><strong>Instructor:</strong> Emily Johnson</p>
+                                <p><strong>Total Time:</strong> 25 hours</p>
+                                <a href="#" class="card_link" onclick="viewSyllabus('responsive')">View Syllabus</a>
+                                <p><strong>Reviews:</strong> <mark class="rating">★★★★☆</mark> (40 Reviews)</p>
+                                <a href="#" class="btn btn-secondary"
+                                    onclick="InstructorInfo('responsive-instructor-details')">Instructor Details</a>
+                                <a href="#" class="btn btn-primary btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Instructor Details Section (Initially Hidden) -->
+                        <div class="instructor-details d-none" id="responsive-instructor-details">
+                            <h3>Instructor: Emily Johnson</h3>
+                            <p>Emily Johnson is a professional web designer with over 6 years of experience in creating
+                                responsive and mobile-friendly websites. She has a strong background in CSS, HTML, and
+                                JavaScript, and she is passionate about sharing her knowledge on building accessible and
+                                responsive web designs.</p>
+                            <p><strong>Experience:</strong> 6 years</p>
+                            <p><strong>Email:</strong> emily.johnson@example.com</p>
+                        </div>
+                        <!-- Syllabus of Responsive Web Design -->
+                        <div class="syllabus d-none" id="responsive">
+                            <h1>Responsive Web Design Course Syllabus</h1>
+
+                            <div class="module">
+                                <h2>Module 1: Introduction to Responsive Design</h2>
+                                <ul>
+                                    <li>Overview of Responsive Design Principles</li>
+                                    <li>Media Queries and Breakpoints</li>
+                                    <li>Fluid Grids and Flexible Images</li>
+                                    <li>Mobile-First Design Approach</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 2: CSS Flexbox and Grid Layouts</h2>
+                                <ul>
+                                    <li>Introduction to Flexbox</li>
+                                    <li>Building Layouts with Flexbox</li>
+                                    <li>Introduction to CSS Grid</li>
+                                    <li>Creating Responsive Grid Layouts</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 3: Responsive Typography and Images</h2>
+                                <ul>
+                                    <li>Responsive Typography Techniques</li>
+                                    <li>Optimizing Images for Different Devices</li>
+                                    <li>Using Viewport Units and REMs</li>
+                                    <li>Designing for High-DPI Screens</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 4: Testing and Debugging</h2>
+                                <ul>
+                                    <li>Testing Responsiveness Across Devices</li>
+                                    <li>Debugging Responsive Design Issues</li>
+                                    <li>Using Browser Developer Tools</li>
+                                    <li>Performance Optimization</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 5: Capstone Project</h2>
+                                <ul>
+                                    <li>Creating a Fully Responsive Website</li>
+                                    <li>Project Presentation and Review</li>
+                                    <li>Feedback and Iteration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!----------------------------------- Card 4:API Development and Integration ------------------------>
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-4">
+                        <div class="card">
+                            <img src="API_img.jpeg" class="card-img-top" alt="API Development">
+                            <div class="card-body">
+                                <h5 class="card-title">API Development and Integration</h5>
+                                <p class="card-text">Construct and embed RESTful and GraphQL APIs to enhance your
+                                    application's capabilities.</p>
+                                <p><strong>Instructor:</strong> Michael Brown</p>
+                                <p><strong>Total Time:</strong> 15 hours</p>
+                                <a href="#" class="card_link" onclick="viewSyllabus('api')">View Syllabus</a>
+                                <p><strong>Reviews:</strong> <mark class="rating">★★★★☆</mark> (25 Reviews)</p>
+                                <a href="#" class="btn btn-secondary"
+                                    onclick="InstructorInfo('api-instructor-details')">Instructor Details</a>
+                                <a href="#" class="btn btn-primary btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Instructor Details Section (Initially Hidden) -->
+                        <div class="instructor-details d-none" id="api-instructor-details">
+                            <h3>Instructor: Michael Brown</h3>
+                            <p>Michael Brown is an expert in API development and integration with extensive experience
+                                in building and managing RESTful and GraphQL APIs. He has worked on numerous projects
+                                involving API design, integration, and optimization. Michael is passionate about
+                                teaching and aims to provide practical knowledge and skills that can be immediately
+                                applied in real-world scenarios.</p>
+                            <p><strong>Experience:</strong> 8+ years</p>
+                            <p><strong>Email:</strong> michael.brown@example.com</p>
+                        </div>
+                        <!-- Syllabus of API Development and Integration -->
+                        <div class="syllabus d-none" id="api">
+                            <h1>API Development and Integration Course Syllabus</h1>
+
+                            <div class="module">
+                                <h2>Module 1: Introduction to APIs</h2>
+                                <ul>
+                                    <li>What is an API?</li>
+                                    <li>Types of APIs (REST, SOAP)</li>
+                                    <li>API Design Principles</li>
+                                    <li>Introduction to API Documentation</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 2: Building APIs</h2>
+                                <ul>
+                                    <li>Creating RESTful APIs with Node.js and Express</li>
+                                    <li>API Routing and Endpoints</li>
+                                    <li>Handling Requests and Responses</li>
+                                    <li>API Authentication and Authorization</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 3: API Integration</h2>
+                                <ul>
+                                    <li>Consuming APIs in Web Applications</li>
+                                    <li>Integrating APIs with Front-End Frameworks</li>
+                                    <li>API Testing Tools (Postman, Swagger)</li>
+                                    <li>Error Handling and Debugging</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 4: Advanced API Topics</h2>
+                                <ul>
+                                    <li>Rate Limiting and Throttling</li>
+                                    <li>API Versioning and Documentation</li>
+                                    <li>GraphQL vs REST APIs</li>
+                                    <li>Performance Optimization</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 5: Capstone Project</h2>
+                                <ul>
+                                    <li>Developing a Complete API and Integration</li>
+                                    <li>Project Presentation and Review</li>
+                                    <li>Feedback and Iteration</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!---------------------------------- Course Card 5: Front-end Development -------------------------->
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-4">
+                        <div class="card">
+                            <img src="frontend_img.jpg" class="card-img-top" alt="Frontend Development">
+                            <div class="card-body">
+                                <h5 class="card-title">Frontend Development</h5>
+                                <p class="card-text">Learn to create stunning and responsive user interfaces with HTML,
+                                    CSS,
+                                    and JavaScript. Dive into frameworks like React and Angular to enhance your frontend
+                                    skills.</p>
+                                <p><strong>Instructor:</strong> John Smith</p>
+                                <p><strong>Total Time:</strong> 18 hours</p>
+                                <a href="#" class="card_link" onclick="viewSyllabus('frontend')">View Syllabus</a>
+                                <p><strong>Reviews:</strong> <mark class="rating">★★★★★</mark> (40 Reviews)</p>
+                                <a href="#" class="btn btn-secondary"
+                                    onclick="InstructorInfo('frontend-instructor-details')">Instructor Details</a>
+                                <a href="#" class="btn btn-primary btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+                        <!-- Instructor Details Section (Initially Hidden) -->
+                        <div class="instructor-details d-none" id="frontend-instructor-details">
+                            <h3>Instructor: John Smith</h3>
+                            <p>John Smith is a highly experienced front-end developer with over 10 years of experience
+                                in creating dynamic and interactive user interfaces. He specializes in HTML, CSS,
+                                JavaScript, and popular frameworks like React and Angular. John has worked with various
+                                leading tech companies and has a passion for teaching and mentoring aspiring developers.
+                                His courses are designed to provide hands-on experience and practical knowledge,
+                                ensuring students are well-prepared for real-world projects.</p>
+                            <p><strong>Experience:</strong> 10+ years</p>
+                            <p><strong>Email:</strong> john.smith@example.com</p>
+                        </div>
+                        <!-- Syllabus of Front-End Development -->
+                        <div class="syllabus d-none" id="frontend">
+                            <h1>Front-End Development Course Syllabus</h1>
+
+                            <div class="module">
+                                <h2>Module 1: Introduction to Front-End Development</h2>
+                                <ul>
+                                    <li>Overview of Web Technologies</li>
+                                    <li>HTML Basics and Advanced Concepts</li>
+                                    <li>CSS Basics and Preprocessors (Sass)</li>
+                                    <li>Responsive Design and Media Queries</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 2: Advanced CSS and JavaScript</h2>
+                                <ul>
+                                    <li>CSS Flexbox and Grid Layouts</li>
+                                    <li>JavaScript Basics and DOM Manipulation</li>
+                                    <li>Event Handling and AJAX</li>
+                                    <li>Introduction to Front-End Frameworks (React, Vue)</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 3: Build Tools and Version Control</h2>
+                                <ul>
+                                    <li>Using Build Tools (Webpack, Gulp)</li>
+                                    <li>Version Control with Git and GitHub</li>
+                                    <li>Automated Testing for Front-End Code</li>
+                                    <li>Deployment and Continuous Integration</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 4: Front-End Optimization</h2>
+                                <ul>
+                                    <li>Performance Optimization Techniques</li>
+                                    <li>Accessibility and Usability Best Practices</li>
+                                    <li>SEO Best Practices for Front-End</li>
+                                    <li>Cross-Browser Compatibility</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 5: Capstone Project</h2>
+                                <ul>
+                                    <li>Developing a Complete Front-End Application</li>
+                                    <li>Project Presentation and Review</li>
+                                    <li>Feedback and Iteration</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!---------------------------------- Course Card 6: Back-end Development ------------------------->
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-4">
+                        <div class="card">
+                            <img src="backendDev_img.jpg" class="card-img-top" alt="Backend Development">
+                            <div class="card-body">
+                                <h5 class="card-title">Backend Development</h5>
+                                <p class="card-text">Master server-side programming with Node.js, Express.js, and
+                                    database
+                                    management. Build and maintain robust APIs and server logic.</p>
+                                <p><strong>Instructor:</strong> Jane Doe</p>
+                                <p><strong>Total Time:</strong> 22 hours</p>
+                                <a href="#" class="card_link" onclick="viewSyllabus('backend')">View Syllabus</a>
+                                <p><strong>Reviews:</strong> <mark class="rating">★★★★☆</mark> (35 Reviews)</p>
+                                <a href="#" class="btn btn-secondary"
+                                    onclick="InstructorInfo('backend-instructor-details')">Instructor Details</a>
+                                <a href="#" class="btn btn-primary btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+                        <!-- Instructor Details Section (Initially Hidden) -->
+                        <div class="instructor-details d-none" id="backend-instructor-details">
+                            <h3>Instructor: Jane Doe</h3>
+                            <p>Jane Doe is a seasoned backend developer with over 8 years of experience in building
+                                scalable server-side applications. She specializes in Node.js, Express.js, and various
+                                database technologies. Jane has worked with both startups and large corporations,
+                                bringing her expertise in creating efficient and secure backend systems. She is
+                                passionate about teaching and has helped many aspiring developers master backend
+                                development through her interactive and practical approach.</p>
+                            <p><strong>Experience:</strong> 8+ years</p>
+                            <p><strong>Email:</strong> jane.doe@example.com</p>
+                        </div>
+                        <!-- Syllabus of Back-End Development -->
+                        <div class="syllabus d-none" id="backend">
+                            <h1>Back-End Development Course Syllabus</h1>
+
+                            <div class="module">
+                                <h2>Module 1: Introduction to Back-End Development</h2>
+                                <ul>
+                                    <li>Overview of Server-Side Programming</li>
+                                    <li>Introduction to Databases (SQL and NoSQL)</li>
+                                    <li>Basic CRUD Operations</li>
+                                    <li>Understanding RESTful APIs</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 2: Server-Side Languages</h2>
+                                <ul>
+                                    <li>Node.js Basics</li>
+                                    <li>Express.js Framework</li>
+                                    <li>Working with MongoDB</li>
+                                    <li>Building and Consuming APIs</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 3: Authentication and Security</h2>
+                                <ul>
+                                    <li>User Authentication and Authorization</li>
+                                    <li>Secure Coding Practices</li>
+                                    <li>Handling Sensitive Data</li>
+                                    <li>Introduction to OAuth and JWT</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 4: Advanced Back-End Topics</h2>
+                                <ul>
+                                    <li>Asynchronous Programming and Event-Driven Architecture</li>
+                                    <li>Microservices and API Gateways</li>
+                                    <li>Deployment Strategies and Scaling</li>
+                                    <li>Testing and Debugging Back-End Code</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 5: Capstone Project</h2>
+                                <ul>
+                                    <li>Developing a Complete Back-End System</li>
+                                    <li>Integration with Front-End</li>
+                                    <li>Project Presentation and Review</li>
+                                    <li>Feedback and Iteration</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!---------------------------------------- Card 7: Full-Stack Development---------------------------->
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-4">
+                        <div class="card">
+                            <img src="fullstack_img.jpg" class="card-img-top" alt="Full-Stack Development">
+                            <div class="card-body">
+                                <h5 class="card-title">Full-Stack Development</h5>
+                                <p class="card-text">Become proficient in both frontend and backend development. Learn
+                                    to
+                                    build complete applications from scratch using technologies like MERN or LAMP stack.
+                                </p>
+                                <p><strong>Instructor:</strong> Emily Davis</p>
+                                <p><strong>Total Time:</strong> 30 hours</p>
+                                <a href="#" class="card_link" onclick="viewSyllabus('fullstack')">View Syllabus</a>
+                                <p><strong>Reviews:</strong> <mark class="rating">★★★★★</mark> (50 Reviews)</p>
+                                <a href="#" class="btn btn-secondary"
+                                    onclick="InstructorInfo('fullstack-instructor-details')">Instructor Details</a>
+                                <a href="#" class="btn btn-primary btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+                        <!-- Instructor Details Section (Initially Hidden) -->
+                        <div class="instructor-details d-none" id="fullstack-instructor-details">
+                            <h3>Instructor: Emily Davis</h3>
+                            <p>Emily Davis is an experienced full-stack developer with over 10 years in the industry.
+                                She specializes in both frontend and backend technologies, including JavaScript,
+                                Node.js, React, MongoDB, and more. Emily has worked on numerous high-profile projects
+                                and is passionate about teaching the next generation of developers. Her approach to
+                                teaching is hands-on, ensuring that students not only learn the theory but also apply it
+                                in real-world scenarios.</p>
+                            <p><strong>Experience:</strong> 10+ years</p>
+                            <p><strong>Email:</strong> emily.davis@example.com</p>
+                        </div>
+                        <!-- Syllabus of Full-Stack Development -->
+                        <div class="syllabus d-none" id="fullstack">
+                            <h1>Full-Stack Development Course Syllabus</h1>
+
+                            <div class="module">
+                                <h2>Module 1: Introduction to Full-Stack Development</h2>
+                                <ul>
+                                    <li>Overview of Full-Stack Development</li>
+                                    <li>Front-End vs. Back-End Development</li>
+                                    <li>Understanding the Tech Stack</li>
+                                    <li>Setting Up Development Environment</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 2: Front-End Development</h2>
+                                <ul>
+                                    <li>HTML5 Basics and Advanced Features</li>
+                                    <li>CSS3 for Styling and Layouts</li>
+                                    <li>Responsive Design with Media Queries</li>
+                                    <li>JavaScript Basics and Advanced Techniques</li>
+                                    <li>Front-End Frameworks (React, Vue, Angular)</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 3: Back-End Development</h2>
+                                <ul>
+                                    <li>Introduction to Server-Side Programming</li>
+                                    <li>Node.js and Express.js Basics</li>
+                                    <li>Building RESTful APIs</li>
+                                    <li>Database Integration (SQL & NoSQL)</li>
+                                    <li>Authentication and Authorization</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 4: MERN Stack Development</h2>
+                                <ul>
+                                    <li>Introduction to MERN Stack</li>
+                                    <li>Setting Up MongoDB</li>
+                                    <li>Building a Backend with Express.js</li>
+                                    <li>Creating a RESTful API with Node.js</li>
+                                    <li>Front-End Development with React.js</li>
+                                    <li>Connecting Front-End and Back-End</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 5: Deployment and DevOps</h2>
+                                <ul>
+                                    <li>Introduction to Deployment</li>
+                                    <li>Deploying Applications on Heroku and AWS</li>
+                                    <li>Continuous Integration and Continuous Deployment (CI/CD)</li>
+                                    <li>Version Control with Git and GitHub</li>
+                                    <li>Monitoring and Logging</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 6: Capstone Project</h2>
+                                <ul>
+                                    <li>Project Planning and Design</li>
+                                    <li>Building a Full-Stack Application</li>
+                                    <li>Integration of Front-End and Back-End</li>
+                                    <li>Deployment and Presentation</li>
+                                    <li>Feedback and Iteration</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!---------------------------------- Course Card 8: Mobile Development ------------------------------->
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-4">
+                        <div class="card">
+                            <img src="app_img.jpg" class="card-img-top" alt="Mobile Development">
+                            <div class="card-body">
+                                <h5 class="card-title">Mobile Development</h5>
+                                <p class="card-text">Learn to build cross-platform mobile applications using Flutter and
+                                    React Native, and deploy them on both Android and iOS.</p>
+                                <p><strong>Instructor:</strong> Michael Brown</p>
+                                <p><strong>Total Time:</strong> 30 hours</p>
+                                <a href="#" class="card_link" onclick="viewSyllabus('app')">View Syllabus</a>
+                                <p><strong>Reviews:</strong> <mark class="rating">★★★★☆</mark> (45 Reviews)</p>
+                                <a href="#" class="btn btn-secondary"
+                                    onclick="InstructorInfo('app-instructor-details')">Instructor Details</a>
+                                <a href="#" class="btn btn-primary btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+                        <!-- Instructor Details Section (Initially Hidden) -->
+                        <div class="instructor-details d-none" id="app-instructor-details">
+                            <h3>Instructor: Michael Brown</h3>
+                            <p>Michael Brown is a seasoned mobile developer with over 8 years of experience in building
+                                cross-platform mobile applications. He has worked with various companies to create
+                                efficient and user-friendly mobile apps using Flutter and React Native. Michael has a
+                                passion for teaching and has been involved in numerous online courses that help students
+                                master mobile development skills.</p>
+                            <p><strong>Experience:</strong> 8+ years</p>
+                            <p><strong>Email:</strong> michael.brown@example.com</p>
+                        </div>
+                        <!-- Syllabus of Mobile Development -->
+                        <div class="syllabus d-none" id="app">
+                            <h1>Mobile Development Course Syllabus</h1>
+
+                            <div class="module">
+                                <h2>Module 1: Introduction to Mobile Development</h2>
+                                <ul>
+                                    <li>Overview of Mobile Development</li>
+                                    <li>Differences between Native, Hybrid, and Web Apps</li>
+                                    <li>Introduction to Mobile Development Tools and IDEs</li>
+                                    <li>Setting Up the Development Environment</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 2: Android Development</h2>
+                                <ul>
+                                    <li>Introduction to Android Studio</li>
+                                    <li>Understanding Android Architecture</li>
+                                    <li>Creating a Simple Android Application</li>
+                                    <li>UI/UX Design in Android (Layouts, Views, and Widgets)</li>
+                                    <li>Working with Intents and Activities</li>
+                                    <li>Data Storage Options (Shared Preferences, SQLite, Room)</li>
+                                    <li>Networking in Android (HTTP Requests, APIs)</li>
+                                    <li>Publishing an Android App</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 3: iOS Development</h2>
+                                <ul>
+                                    <li>Introduction to Xcode and Swift</li>
+                                    <li>Understanding iOS Architecture</li>
+                                    <li>Creating a Simple iOS Application</li>
+                                    <li>UI/UX Design in iOS (Storyboards, Auto Layout)</li>
+                                    <li>Working with View Controllers and Navigation</li>
+                                    <li>Data Storage Options (UserDefaults, Core Data)</li>
+                                    <li>Networking in iOS (URLSession, APIs)</li>
+                                    <li>Publishing an iOS App</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 4: Cross-Platform Development</h2>
+                                <ul>
+                                    <li>Introduction to Cross-Platform Frameworks</li>
+                                    <li>Overview of Flutter</li>
+                                    <li>Setting Up a Flutter Development Environment</li>
+                                    <li>Building a Simple Cross-Platform App with Flutter</li>
+                                    <li>Introduction to React Native</li>
+                                    <li>Setting Up a React Native Development Environment</li>
+                                    <li>Building a Simple Cross-Platform App with React Native</li>
+                                    <li>Comparing Flutter and React Native</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 5: Advanced Mobile Development</h2>
+                                <ul>
+                                    <li>Integrating Mobile Apps with APIs and Backend Services</li>
+                                    <li>Handling Real-Time Data and Notifications</li>
+                                    <li>Optimizing Performance and Memory Management</li>
+                                    <li>Implementing Advanced UI/UX Features (Animations, Gestures)</li>
+                                    <li>Testing and Debugging Mobile Applications</li>
+                                    <li>App Security and Privacy Best Practices</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 6: Capstone Project</h2>
+                                <ul>
+                                    <li>Project Planning and Design</li>
+                                    <li>Developing a Full-Fledged Mobile Application</li>
+                                    <li>Integrating with APIs and Backend Services</li>
+                                    <li>Testing and Debugging the Application</li>
+                                    <li>Deploying the Mobile App to App Stores</li>
+                                    <li>Presentation and Feedback</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--------------------------------- Card 9:Artificial Intelligence ------------------------------->
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-4">
+                        <div class="card">
+                            <img src="AI_img.webp" class="card-img-top" alt="Artificial Intelligence">
+                            <div class="card-body">
+                                <h5 class="card-title">Artificial Intelligence</h5>
+                                <p class="card-text">Dive into the world of AI and machine learning. Learn about neural
+                                    networks, deep learning, and AI applications with tools like TensorFlow and PyTorch.
+                                </p>
+                                <p><strong>Instructor:</strong> Laura Wilson</p>
+                                <p><strong>Total Time:</strong> 25 hours</p>
+                                <a href="#" class="card_link" onclick="viewSyllabus('AI')">View Syllabus</a>
+                                <p><strong>Reviews:</strong> <mark class="rating">★★★★☆</mark> (28 Reviews)</p>
+                                <a href="#" class="btn btn-secondary"
+                                    onclick="InstructorInfo('AI-instructor-details')">Instructor Details</a>
+                                <a href="#" class="btn btn-primary btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+                        <!-- Instructor Details Section (Initially Hidden) -->
+                        <div class="instructor-details d-none" id="AI-instructor-details">
+                            <h3>Instructor: Laura Wilson</h3>
+                            <p>Laura Wilson is a leading expert in artificial intelligence with over a decade of
+                                experience in the field. She holds a Ph.D. in Computer Science and specializes in neural
+                                networks and deep learning. Laura has published numerous papers on AI and has worked on
+                                innovative AI projects in both academia and industry. She is passionate about teaching
+                                and empowering students to build the future of AI.</p>
+                            <p><strong>Experience:</strong> 10+ years</p>
+                            <p><strong>Email:</strong> laura.wilson@example.com</p>
+                        </div>
+                        <!-- Syllabus of Artificial Intelligence -->
+                        <div class="syllabus d-none" id="AI">
+                            <h1>Artificial Intelligence Course Syllabus</h1>
+
+                            <div class="module">
+                                <h2>Module 1: Introduction to AI</h2>
+                                <ul>
+                                    <li>Overview of Artificial Intelligence</li>
+                                    <li>History and Evolution of AI</li>
+                                    <li>Basic Concepts and Terminology</li>
+                                    <li>AI in Industry and Everyday Life</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 2: Machine Learning Fundamentals</h2>
+                                <ul>
+                                    <li>Introduction to Machine Learning</li>
+                                    <li>Types of Machine Learning: Supervised, Unsupervised, Reinforcement</li>
+                                    <li>Basic Algorithms and Techniques</li>
+                                    <li>Training and Testing Models</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 3: Neural Networks and Deep Learning</h2>
+                                <ul>
+                                    <li>Understanding Neural Networks</li>
+                                    <li>Introduction to Deep Learning</li>
+                                    <li>Building and Training Neural Networks</li>
+                                    <li>Advanced Architectures (CNNs, RNNs)</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 4: AI Applications and Ethics</h2>
+                                <ul>
+                                    <li>AI Applications in Different Domains</li>
+                                    <li>Ethical Considerations in AI</li>
+                                    <li>Bias and Fairness in AI Systems</li>
+                                    <li>Future Trends and Innovations</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 5: Capstone Project</h2>
+                                <ul>
+                                    <li>Developing an AI Application or Model</li>
+                                    <li>Presentation and Review</li>
+                                    <li>Feedback and Iteration </li>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-------------------------------------- Card 10: Machine Learning ------------------------------------>
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-4">
+                        <div class="card">
+                            <img src="machine_img.jpeg" class="card-img-top" alt="Machine Learning">
+                            <div class="card-body">
+                                <h5 class="card-title">Machine Learning</h5>
+                                <p class="card-text">Understand the fundamentals of machine learning, including
+                                    supervised
+                                    and unsupervised learning, and build predictive models using popular
+                                    libraries and
+                                    tools.</p>
+                                <p><strong>Instructor:</strong> Michael Brown</p>
+                                <p><strong>Total Time:</strong> 28 hours</p>
+                                <a href="#" class="card_link" onclick="viewSyllabus('machine')">View Syllabus</a>
+                                <p><strong>Reviews:</strong> <mark class="rating">★★★★★</mark> (32 Reviews)</p>
+                                <a href="#" class="btn btn-secondary"
+                                    onclick="InstructorInfo('machine-instructor-details')">Instructor Details</a>
+                                <a href="#" class="btn btn-primary btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+                        <!-- Instructor Details Section (Initially Hidden) -->
+                        <div class="instructor-details d-none" id="machine-instructor-details">
+                            <h3>Instructor: Michael Brown</h3>
+                            <p>Michael Brown is an experienced data scientist and machine learning engineer with a
+                                background in computer science. He has over 8 years of experience working with machine
+                                learning algorithms and has contributed to several open-source machine learning
+                                projects. Michael has a deep understanding of both the theoretical and practical aspects
+                                of machine learning and enjoys teaching others how to apply these techniques in
+                                real-world scenarios.</p>
+                            <p><strong>Experience:</strong> 8 years</p>
+                            <p><strong>Email:</strong> michael.brown@example.com</p>
+                        </div>
+                        <!-- Syllabus of Machine Learning -->
+                        <div class="syllabus d-none" id="machine">
+                            <h1>Machine Learning Course Syllabus</h1>
+
+                            <div class="module">
+                                <h2>Module 1: Introduction to Machine Learning</h2>
+                                <ul>
+                                    <li>Overview of Machine Learning</li>
+                                    <li>Types of Machine Learning</li>
+                                    <li>Basic Concepts and Algorithms</li>
+                                    <li>Data Preparation and Exploration</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 2: Supervised Learning</h2>
+                                <ul>
+                                    <li>Linear Regression</li>
+                                    <li>Logistic Regression</li>
+                                    <li>Decision Trees and Random Forests</li>
+                                    <li>Support Vector Machines</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 3: Unsupervised Learning</h2>
+                                <ul>
+                                    <li>Clustering Techniques (K-Means, Hierarchical)</li>
+                                    <li>Dimensionality Reduction (PCA, t-SNE)</li>
+                                    <li>Association Rule Learning</li>
+                                    <li>Applications and Case Studies</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 4: Model Evaluation and Tuning</h2>
+                                <ul>
+                                    <li>Model Evaluation Metrics</li>
+                                    <li>Cross-Validation Techniques</li>
+                                    <li>Hyperparameter Tuning</li>
+                                    <li>Handling Overfitting and Underfitting</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 5: Capstone Project</h2>
+                                <ul>
+                                    <li>Developing a Machine Learning Model</li>
+                                    <li>Data Collection and Model Training</li>
+                                    <li>Project Presentation and Review</li>
+                                    <li>Feedback and Iteration</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!------------------------------------- Card 11:Graphic Designing -------------------------------------->
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-4">
+                        <div class="card">
+                            <img src="graphic_img.avif" class="card-img-top" alt="Graphic Designing">
+                            <div class="card-body">
+                                <h5 class="card-title">Graphic Designing</h5>
+                                <p class="card-text">Learn graphic design fundamentals, including typography,
+                                    color theory,
+                                    and layout design. Create stunning visuals using tools like Adobe Photoshop
+                                    and
+                                    Illustrator.</p>
+                                <p><strong>Instructor:</strong> Jessica Green</p>
+                                <p><strong>Total Time:</strong> 15 hours</p>
+                                <a href="#" class="card_link" onclick="viewSyllabus('graphic')">View
+                                    Syllabus</a>
+                                <p><strong>Reviews:</strong> <mark class="rating">★★★★☆</mark> (20 Reviews)</p>
+                                <a href="#" class="btn btn-secondary"
+                                    onclick="InstructorInfo('graphic-instructor-details')">Instructor Details</a>
+                                <a href="#" class="btn btn-primary btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+                        <!-- Instructor Details Section (Initially Hidden) -->
+                        <div class="instructor-details d-none" id="graphic-instructor-details">
+                            <h3>Instructor: Jessica Green</h3>
+                            <p>Jessica Green is a seasoned graphic designer with over 6 years of experience in the
+                                creative industry. She has expertise in Adobe Creative Suite, particularly Photoshop and
+                                Illustrator, and has worked with top brands to create visually compelling designs.
+                                Jessica is passionate about teaching and helping aspiring designers master the art of
+                                graphic design.</p>
+                            <p><strong>Experience:</strong> 6 years</p>
+                            <p><strong>Email:</strong> jessica.green@example.com</p>
+                        </div>
+                        <!-- Syllabus of Graphic Designing -->
+                        <div class="syllabus d-none" id="graphic">
+                            <h1>Graphic Designing Course Syllabus</h1>
+
+                            <div class="module">
+                                <h2>Module 1: Introduction to Graphic Design</h2>
+                                <ul>
+                                    <li>Principles of Graphic Design</li>
+                                    <li>Design Elements and Principles</li>
+                                    <li>Introduction to Design Software (Adobe Photoshop, Illustrator)</li>
+                                    <li>Basic Design Projects</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 2: Typography and Color Theory</h2>
+                                <ul>
+                                    <li>Understanding Typography</li>
+                                    <li>Choosing Fonts and Typefaces</li>
+                                    <li>Color Theory and Application</li>
+                                    <li>Creating Effective Color Schemes</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 3: Branding and Visual Identity</h2>
+                                <ul>
+                                    <li>Creating Brand Logos and Identity</li>
+                                    <li>Designing Brand Collateral</li>
+                                    <li>Designing for Digital and Print Media</li>
+                                    <li>Branding Strategies and Case Studies</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 4: Advanced Design Techniques</h2>
+                                <ul>
+                                    <li>Advanced Techniques in Photoshop and Illustrator</li>
+                                    <li>Creating Complex Designs and Illustrations</li>
+                                    <li>Designing User Interfaces</li>
+                                    <li>Preparing Files for Print and Web</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 5: Capstone Project</h2>
+                                <ul>
+                                    <li>Developing a Comprehensive Design Project</li>
+                                    <li>Client Brief and Design Solutions</li>
+                                    <li>Presentation and Feedback</li>
+                                    <li>Final Adjustments and Iteration</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--------------------------------------- Card 12:Figma Design -------------------------------------->
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-4">
+                        <div class="card">
+                            <img src="figma_img.png" class="card-img-top" alt="Figma Designs">
+                            <div class="card-body">
+                                <h5 class="card-title">Figma Designs</h5>
+                                <p class="card-text">Master Figma for UI/UX design. Learn to create interactive
+                                    prototypes,
+                                    wireframes, and high-fidelity designs to bring your ideas to life.</p>
+                                <p><strong>Instructor:</strong> Karen Johnson</p>
+                                <p><strong>Total Time:</strong> 12 hours</p>
+                                <a href="#" class="card_link" onclick="viewSyllabus('figma')">View Syllabus</a>
+                                <p><strong>Reviews:</strong> <mark class="rating">★★★★☆</mark> (18 Reviews)</p>
+                                <a href="#" class="btn btn-secondary"
+                                    onclick="InstructorInfo('figma-instructor-details')">Instructor Details</a>
+                                <a href="#" class="btn btn-primary btn-enroll">Enroll Now</a>
+                            </div>
+                        </div>
+                        <!-- Instructor Details Section (Initially Hidden) -->
+                        <div class="instructor-details d-none" id="figma-instructor-details">
+                            <h3>Instructor: Karen Johnson</h3>
+                            <p>Karen Johnson is an experienced UI/UX designer specializing in creating user-centric
+                                designs. With over 4 years of professional experience in using Figma, she has worked on
+                                multiple high-profile projects and enjoys teaching others the intricacies of design
+                                tools and best practices for effective prototyping.</p>
+                            <p><strong>Experience:</strong> 4 years</p>
+                            <p><strong>Email:</strong> karen.johnson@example.com</p>
+                        </div>
+                        <!-- Syllabus of Figma Design -->
+                        <div class="syllabus d-none" id="figma">
+                            <h1>Figma Design Course Syllabus</h1>
+
+                            <div class="module">
+                                <h2>Module 1: Introduction to Figma</h2>
+                                <ul>
+                                    <li>Overview of Figma and its Features</li>
+                                    <li>Setting Up Your Figma Workspace</li>
+                                    <li>Basic Tools and Interface Navigation</li>
+                                    <li>Creating Your First Design Project</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 2: Designing with Figma</h2>
+                                <ul>
+                                    <li>Working with Frames and Components</li>
+                                    <li>Design Systems and Styles</li>
+                                    <li>Creating Responsive Designs</li>
+                                    <li>Prototyping and Interactions</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 3: Collaboration and Sharing</h2>
+                                <ul>
+                                    <li>Collaborative Design Features</li>
+                                    <li>Sharing and Feedback Mechanisms</li>
+                                    <li>Version Control and History</li>
+                                    <li>Integrating with Other Tools</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 4: Advanced Figma Techniques</h2>
+                                <ul>
+                                    <li>Advanced Prototyping</li>
+                                    <li>Using Plugins and Extensions</li>
+                                    <li>Designing for Multiple Platforms</li>
+                                    <li>Creating Complex Layouts and Components</li>
+                                </ul>
+                            </div>
+
+                            <div class="module">
+                                <h2>Module 5: Capstone Project</h2>
+                                <ul>
+                                    <li>Developing a Comprehensive Design in Figma</li>
+                                    <li>Presentation and Review</li>
+                                    <li>Feedback and Iteration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+    </header>
+
+    <!-- Enrollment Form -->
+    <div class="enroll-form d-none" id="enroll-form">
+        <div class="enroll-form-content">
+            <h3>Enroll in Course</h3>
+            <form id="enrollForm">
+                <div class="mb-3">
+                    <label for="course" class="form-label">Select Course</label>
+                    <select class="form-control" id="course" name="course" required autocomplete="off">
+                        <option value="">-- Select Course --</option>
+                        <option value="Mern Development">Mern Stack Development</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="Responsive Web Design">Responsive Web Design</option>
+                        <option value="API Development and Integration">API Development and Integration</option>
+                        <option value="Frontend Development">Frontend Development</option>
+                        <option value="Backend Development">Backend Development</option>
+                        <option value="Full-Stack Development">Full-Stack Development</option>
+                        <option value="Mobile Development">Mobile Development</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                        <option value="Machine Learning">Machine Learning</option>
+                        <option value="Graphic Design">Graphic Designing</option>
+                        <option value="Figma Design">Figma Design</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required autocomplete="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required autocomplete="tel">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Enrollment</button>
+                <button type="button" class="btn btn-secondary" id="cancelButton">Cancel</button>
+            </form>
+            <div id="enrollMessage" class="mt-3"></div>
+        </div>
+    </div>
+
+
+  
+
+    <!-- Bootstrap 5 script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script>
+        //-------------------------Enroll Form
+        document.addEventListener('DOMContentLoaded', function () {
+    const enrollForm = document.getElementById('enroll-form');
+    const background = document.body; 
+
+    function toggleEnrollForm() {
+        if (enrollForm.classList.contains('d-none')) {
+            enrollForm.classList.remove('d-none');
+            background.classList.add('blurred');
+        } else {
+            enrollForm.classList.add('d-none');
+            background.classList.remove('blurred');
+        }
+    }
+
+    const enrollButtons = document.querySelectorAll('.btn-enroll');
+    enrollButtons.forEach(button => {
+        button.addEventListener('click', toggleEnrollForm);
+    });
+
+    const cancelButton = document.getElementById('cancelButton');
+    if (cancelButton) {
+        cancelButton.addEventListener('click', toggleEnrollForm);
+    }
+});
+//--------------------------------------------View Syllabus and Instructor Details Section
+ 
+//For View Syllabus Section
+function viewSyllabus(syllabusId) {
+    // Hide all syllabuses
+    document.querySelectorAll('.syllabus').forEach(function(element) {
+        if (element.id !== syllabusId) {
+            element.classList.add('d-none');
+        }
+    });
+    
+    // for Toggling the visibility of the clicked syllabus
+    const syllabusElement = document.getElementById(syllabusId);
+    if (syllabusElement) {
+        syllabusElement.classList.toggle('d-none');
+    }
+}
+
+// For instructor details section
+function InstructorInfo(InstructorId) {
+    document.querySelectorAll('.instructor-details').forEach(function(element) {
+        if (element.id !== InstructorId) {
+            element.classList.add('d-none');
+        }
+    });
+    
+    //for Toggling the visibility of the clicked Instructor details
+    const syllabusElement = document.getElementById(InstructorId);
+    if (syllabusElement) {
+        syllabusElement.classList.toggle('d-none');
+    }
+}
+
+    </script>
+</body>
+
+</html>
